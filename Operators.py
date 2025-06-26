@@ -2,15 +2,16 @@
 # Arithmatic Operators Example
 # + , - , % , * , ** , /
 
-# a = 7
-# b = 2
+a = 7
+b = 2
 # print("Addition of", a, "and", b, "is", a+b)
 # print("Subtraction of", a, "and", b, "is", a-b)
 # print("Multiplication of", a, "and", b, "is", a*b)
 # print("Division of", a , "and", b, "is", a/b)
-# print("Floor Division of", a , "and" , b , "is", a//b)
+# print("Floor Division of", a , "and" , b , "is", a//b)  #Complete divisible number
 # print("Modulus of", a , "and", b , "is", a%b)
 # print("exponentiation of", a, "and", b , "is", a**b)
+
 
 # Questions
 #🔹 Arithmetic Operators (Tasks 11–20)
@@ -102,16 +103,16 @@
 # 38. Use boolean variables in a condition. - need to ask
 # 39. Use nested comparisons: 10 > 5 > 2. - need to ask
 # 40. Use if with a logical expression and print a message. - need to ask
-A = 25
-B = 20
-C = 17
-D = 20
-E = 8
-print("Via 'AND' Operator =", A%5 == 0 and C%5 == 0)
-print("Via 'OR' Operator =", A%5 == 0 or C%5 == 0)
-print(A!=B, B!=C, D!=B)
-print("Combine not with AND or OR:", A!=D and C!=B and B!=D , C!=D or A!=C)
-print()
+# A = 25
+# B = 20
+# C = 17
+# D = 20
+# E = 8
+# print("Via 'AND' Operator =", A%5 == 0 and C%5 == 0)
+# print("Via 'OR' Operator =", A%5 == 0 or C%5 == 0)
+# print(A!=B, B!=C, D!=B)
+# print("Combine not with AND or OR:", A!=D and C!=B and B!=D , C!=D or A!=C)
+# print(A >= B >= D >= E >= C)
 
 
 #------------------------Increment / Decrement operator (a++, a--)
@@ -123,6 +124,32 @@ print()
 # Val = input("Enter some value:")
 # print("you entered:", name)
 # print(type(Val), Val)
+
+#--------------------------------------🔹 Math Functions & Expressions (Tasks 41–50) - need to ask all
+# 41. Find square root of a number using math.sqrt().
+# 42. Use abs() to get absolute value. - abs stands for absolute value
+# 43. Use pow() to calculate powers.
+# 44. Round a float to 2 decimal places.
+# 45. Use math.floor() and math.ceil() on float values.
+# 46. Calculate area of a circle (use π from math.pi).
+# 47. Use min() and max() with a list of numbers.
+# 48. Use divmod() to get quotient and remainder.
+# 49. Calculate factorial using math.factorial().
+# 50. Use math.sin() or math.cos() on an angle (convert to radians).
+
+# import math as m
+# print(m.sqrt(64))
+# print(m.sqrt(99))
+
+# n: float = 52.369 #2nd ques -  abs = absolute value
+# n1: int = 5
+# n2: complex = 3 + 4j #need to know how it come 5.0
+# print(abs(n))
+# print(abs(n1))
+# print(abs(n2))
+
+# print(pow(5*3))
+
 
 
 #--------Questions
@@ -318,5 +345,7 @@ print()
 #     print(x)
 # myfunc()
 # print(x)
+
+
 
 
