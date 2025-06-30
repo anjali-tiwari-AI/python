@@ -96,13 +96,13 @@
 Febonacci = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]
 
 
-#6 WAP to check whether a number is palindrome or not using iteration #we can print through indexing - [121, 1331, 14541, 8998]
-pal = 1221
-V1 = int(pal/1)%10
-V2 = int(pal/10)%10
-V3 = int(pal/100)%10
-V4 = int(pal/1000)%10
-print(V4, V3, V2, V1)
+#6 WAP to check whether a number is palindrome or not using iteration #we can print through indexing - [121, 1331, 14541, 8998] - check
+# pal = 1221
+# V1 = int(pal/1)%10
+# V2 = int(pal/10)%10
+# V3 = int(pal/100)%10
+# V4 = int(pal/1000)%10
+# print(V4, V3, V2, V1)
 # or
 
 
@@ -121,16 +121,42 @@ list = [56, 89, 25]
 #9 WAP to check if a number is binary - [1 , 0]
 
 #10 WAP to find sum of digits of a number using recursion
-#11 WAP to swap two numbers without using third Variable
-A = 89
-B = 75
+#11 WAP to swap two numbers without using third Variable - check again
+# A = 25 #16
+# B = 16 #25
+# B = A
+# A = A + B #41
+
+# print(A , B)
+
+
+#12 WAP to swap two numbers using third Variable - done
+# A = 5
+# B = 8
+# A , B = B, A
+# print(A , B)
+
+
+#13 WAP to find prime factors of a given integer - only complete divisible by its own number only
+prime = [7, 19, 45, 29, 63, 47, 52, 53, 89]
+i = prime[]
+while i in prime:
+    print(prime[i])
+    i += 1
 
 
 
-#12 WAP to swap two numbers using third Variable
-#13 WAP to find prime factors of a given integer
-#14 WAP to add two integer without using arithmetic + Operator 
+#14 WAP to add two integer without using arithmetic + Operator - Ans 13 - Need to check
 
+
+
+
+# or
+# A = B - A #3
+# B = B//5
+# A = A*A
+# B = A//B
+# print(A , B)
 
 #15 WAP to check given number is perfect or not
 # Num = int(input("Enter the number:"))
