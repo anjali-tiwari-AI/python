@@ -198,3 +198,47 @@
 #     print("Triangle can be formed")
 # else:
 #     print("Triangle can't be formed")
+
+
+#19 WAP to display "Hello" if a number entered by user is a multiple of five, otherwise print "Bye"- Done
+# Num = int(input("Enter number:"))
+# if Num%5 == 0: 
+#     print("Hello")
+# else:
+#     print("bye")
+
+
+#20 WAP to calculate the electricity bill (Accept number of unit from user) according to the following criteria: - done
+#unit                                                                           price
+#First 100units                                                                 No Charge
+#Next 100 units                                                                 Rs. 5 per unit     
+# After 200 units                                                               Rs. 10 per unit
+#(For example if input unit is 350 then total bill amount is RS. 2000)
+# unit = int(input("Enter the consumed units:"))
+# if unit>= 100 and unit<=199:
+#     print("The charge per unit is 5. if the consumed electricity is 100 or less then 100. so, the total charge would be:", unit*5)
+# elif unit>200:
+#     print("The charge per unit 10 if the consumed electricity is more than 200:", unit*10)
+# else: 
+#     print("No charges")
+
+
+#21 WAP to display the last digit of a number. - Done
+# digit = int(input("Enter number:"))
+# print("Last digit of a number:", digit % 10)
+
+
+#22 WAP to check whether the last digit if a number is divisible by 3 or not - done
+# Num = int(input("Enter number:"))
+# if Num%3 == 0:
+#     print("it is complete divisible by 3")
+# else: 
+#     print("it is not complete divisible by 3")
+
+
+#23 WAP to accept percentage from the user and display the grade according to the following criteria:
+# Marks                             Grade
+# >90                               A
+# >80 and <= 90                     B
+# >= 60 and <= 80                   C
+# below 60                          D
