@@ -273,3 +273,18 @@
 
 #26 WAP to accept a number from 1 to 12 and display name of the month and days in the month like 1 for january and number of days 30 
 
+
+#27 WAP to accept any city from the user and display monument of that city - Need to check 
+# City              Monument
+# Delhi             Red Fort 
+# Agre              Taj Mahal
+# Jaipur            Jal Mahal
+
+
+#27 WAP to check whether a number entered is three digit number or not: - Need to check 
+Number = int(input("Enter number:"))
+if Number == int(Number[0], Number[1], Number[2]):
+    print("it is a 3 digit number")
+else:
+    print("it is not a 3 digit number")
+
