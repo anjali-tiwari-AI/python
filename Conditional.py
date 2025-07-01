@@ -35,7 +35,18 @@
 # print(max(A, B, C))
 
 
-#4 WAP to find the largest among three variables using nesting if.
+#4 WAP to find the largest among three variables using nesting if. - Need to check
+# Number1 = int(input("Enter 1st number:"))
+# Number2 = int(input("Enter 2nd number:"))
+# Number3 = int(input("Enter 3rd number:"))
+# if Number1> Number2:
+#     if Number1>Number3:
+#         print("Number 1 is the greatest number")
+# elif Number2>Number1:
+#     if Number2>= Number3:
+#         print("Number 2 is the greatest number")
+# else:
+#     print("Number 3 is the greatest number")
 
 
 
@@ -101,12 +112,12 @@
 
 
 #11 WAP to print day name of week.- need to check
-days = input("Enter the week number")
-if days.isweek():
-    print("it is monday")
-    days += 1
-else: 
-    print("it is invalid data")
+# days = input("Enter the week number")
+# if days.isweek():
+#     print("it is monday")
+#     days += 1
+# else: 
+#     print("it is invalid data")
 
 
 #12 WAP to accept two integers and check whether they are equal or not. - Done
@@ -149,7 +160,6 @@ else:
 # Chemistry = int(input("Enter Chemistry's marks:"))
 # Total_Marks = (Math + Physics + Chemistry)
 # Percentage = (Total_Marks*100/300)
-
 # if Percentage >= 85:
 #     print("Division__I ")
 # elif Percentage >= 75:
@@ -160,14 +170,31 @@ else:
 #     print("Division__IV")
 
 
-#16 WAP to enter month number and print number of days in month 
-Month = int("Enter Month Number:")
+#16 WAP to enter month number and print number of days in month - Done
+# Month = int(input("Enter the month Number:"))
+# if Month in [1, 3, 5, 7, 8, 10, 12]:
+#     print("The number of days is 31")
+# elif Month in [4, 6, 9, 11]:
+#     print("The number of days is 30")
+# else:
+#     print("The number of days is either 28 or 29")
 
 
+#17 WAP to count total number of notes in entered amount.s - Done
+# Amount = int(input("Enter the amount:"))
+# Notes = int(input("Enter the value of currency:"))
+# Num_of_Notes = int(Amount/Notes)
+# if Amount / Notes:
+#     print("The total amount is:", Amount , "and totla number of notes is:", Num_of_Notes)
+# else:
+#     print("Can't count")
 
 
-#17 WAP to count total number of notes in entered amount.s
-
-
-
-#18 WAP to check whether a triangle can be formed by the given value for the angles.   
+#18 WAP to check whether a triangle can be formed by the given value for the angles.- Done
+# A = int(input("Enter the first number:"))
+# B = int(input("Enter the second number:"))
+# C = int(input("Enter the third number:"))
+# if A+B>C and B+C>A and C+A>B:
+#     print("Triangle can be formed")
+# else:
+#     print("Triangle can't be formed")
