@@ -236,9 +236,40 @@
 #     print("it is not complete divisible by 3")
 
 
-#23 WAP to accept percentage from the user and display the grade according to the following criteria:
+#23 WAP to accept percentage from the user and display the grade according to the following criteria: - Done
 # Marks                             Grade
 # >90                               A
 # >80 and <= 90                     B
 # >= 60 and <= 80                   C
 # below 60                          D
+# Marks = int(input("Enter the obtain marks:"))
+# if Marks >90:
+#     print("The grade is:A because the marks is:", Marks)
+# elif Marks >80 and Marks <= 90:
+#     print("The grade is:B because the marks is:", Marks) 
+# elif Marks >= 60 and Marks <= 80:
+#     print("The grade is:C because the marks is:", Marks)
+# else:
+#     print("The grade is:D because the marks is:", Marks)
+
+
+#24 WAP to accept the cost price of a bike and display the road tax to be paid according to the following criteria: - Done
+# Cost price(in Rs.)                    Tax 
+# >100000                               15%
+# >50000 and <= 100000                  10%
+# <= 50000                              5%
+# Cost_price = int(input("Enter the cost price of a bike:"))
+# if Cost_price > 100000:
+#     print("The cost price would be 15% i.e. in amount it would be:", Cost_price*15/100, "total amoount paid")
+# elif Cost_price > 50000 and Cost_price <= 100000:
+#     print("The cost price would be 10% i.e. in amount it would be:", Cost_price*10/100, "total amoount paid")
+# else:
+#     print("The cost price would be 5% i.e. in amount it would be:", Cost_price*5/100, "total amoount paid")
+
+
+#25 WAP to accept a number from 1 to 7 and display the name of the day like 1 for Sunday , 2 for Monday and so on -- Need to check 
+# Num = int(input("Enter Number:"))
+
+
+#26 WAP to accept a number from 1 to 12 and display name of the month and days in the month like 1 for january and number of days 30 
+
