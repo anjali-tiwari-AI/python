@@ -35,7 +35,7 @@
 # print(max(A, B, C))
 
 
-#4 WAP to find the largest among three variables using nesting if. - Need to check
+#4 WAP to find the largest among three variables using nesting if. - Done
 # Number1 = int(input("Enter 1st number:"))
 # Number2 = int(input("Enter 2nd number:"))
 # Number3 = int(input("Enter 3rd number:"))
@@ -283,8 +283,17 @@
 
 #27 WAP to check whether a number entered is three digit number or not: - Need to check 
 Number = int(input("Enter number:"))
-if Number == int(Number[0], Number[1], Number[2]):
-    print("it is a 3 digit number")
-else:
-    print("it is not a 3 digit number")
+
+
+
+# if Number//100:
+#     print("it is a 3 digit number")
+# else:
+#     print("it is not a 3 digit number")
+
+# Number = int(input("Enter number:"))
+# if Number == int(Number[0], Number[1], Number[2]):
+#     print("it is a 3 digit number")
+# else:
+#     print("it is not a 3 digit number")
 
