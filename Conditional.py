@@ -85,39 +85,57 @@
 # else:
 #     print("it is lowercase")
 
+#==============================ASCII=============================================================
+# asc = input("Enter:")
+# print(chr(asc))
+# ord() -> character_to_Ascii
+# chr()-> ASCII to character
 
-#9 WAP to check entered character vowel or consonant. - Need to check
+#---------------------------------------------------------------------
+#9 WAP to check entered character vowel or consonant. - Done
 # char = input("Enter the character:")
-# if char == ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]:
-#     print(" it is Vowel")
+# if (char =="A" or char=="E" or char=="I" or char=="O" or char=="U" or char=="a" or char=="e" or char=="i" or char=="o" or char=="u"):
+#     print("it is Vowel")
+# else:
+#     print("it is a consonant")
+# ----------------------or ------------------------------------------
+# char = input("Enter the character:")
+# Vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
+# if char in Vowels:
+#     print("it is Vowels")
 # else:
 #     print("it is a consonant")
 
-# str = (AEIOUaeiou)
-# char = input("enter:")
-# if char == :
-#     print(" it is Vowel")
+
+#10 WAP to check whether a character is alphabet, digit or special character. - Done 
+# x = input("Enter the data:")
+# if (ord(x)>=65 and ord(x)<=90) or (ord(x)>=97 and ord(x)<=122):
+#     print("it is alphabate")
+# elif ord(x)>=48 and ord(x)<=57:
+#     print("it is integer")
 # else:
-#     print("it is a consonant")
+#     print("it is special character")
+    
 
-
-#10 WAP to check whether a character is alphabet, digit or special character. - need to check
-# char = int(input("Enter the data:"))
-# if char<= 0 and char>= -1:
-#     print("it is a digit")
-# elif str(char<= "A" and char<="Z") or str(char>="a" and char<="z"):
-#     print("It is a alphabet")
+#11 WAP to print day name of week.- Done
+# days = int(input("Enter the week number:-"))
+# if days == 1:
+#     print("Today is Monday")
+# elif days == 2:
+#     print("Today is Tuesday")
+# elif days == 3:
+#     print("Today is Wednesday")
+# elif days == 4:
+#     print("Today is Thursday")
+# elif days == 5:
+#     print("Today is Friday")
+# elif days == 6:
+#     print("Today is Saturday")
+# elif days == 7:
+#     print("Today is Sunday")
 # else:
-#     print ("It is a special character")
+#     print("Input data is invalid")
 
-
-#11 WAP to print day name of week.- need to check
-# days = input("Enter the week number")
-# if days.isweek():
-#     print("it is monday")
-#     days += 1
-# else: 
-#     print("it is invalid data")
 
 
 #12 WAP to accept two integers and check whether they are equal or not. - Done
@@ -267,22 +285,56 @@
 #     print("The cost price would be 5% i.e. in amount it would be:", Cost_price*5/100, "total amoount paid")
 
 
-#25 WAP to accept a number from 1 to 7 and display the name of the day like 1 for Sunday , 2 for Monday and so on -- Need to check 
-# Num = int(input("Enter Number:"))
-
-
 #26 WAP to accept a number from 1 to 12 and display name of the month and days in the month like 1 for january and number of days 30 
+# Month = int(input("Enter the number of the month:-"))
+# if Month == 1:
+#     print("The month is January and the number of days is 31")
+# elif Month ==2:
+#     print("The month is February and the number of days is 28/29")
+# elif Month ==3:
+#     print("The month is March and the number of days is 31")
+# elif Month ==4:
+#     print("The month is April and the number of days is 30")
+# elif Month ==5:
+#     print("The month is May and the number of days is 31")
+# elif Month ==6:
+#     print("The month is June and the number of days is 30")
+# elif Month ==7:
+#     print("The month is July and the number of days is 31")
+# elif Month ==8:
+#     print("The month is August and the number of days is 31")
+# elif Month ==9:
+#     print("The month is September and the number of days is 30")
+# elif Month ==10:
+#     print("The month is October and the number of days is 31")
+# elif Month ==11:
+#     print("The month is November and the number of days is 30")
+# elif Month ==12:
+#     print("The month is December and the number of days is 31")
+# else:
+#     print("Enter data is invalid")
 
 
 #27 WAP to accept any city from the user and display monument of that city - Need to check 
 # City              Monument
 # Delhi             Red Fort 
-# Agre              Taj Mahal
+# Agra              Taj Mahal
 # Jaipur            Jal Mahal
+city = input("Enter city name:")
+city = "Monument"
+city = "Delhi" == "Red Fort"
+city = Agra = "Taj Mahal"
+city = Jaipur = "Jal Mahal"
+print("The Monument name of the city is:", city)
 
 
 #27 WAP to check whether a number entered is three digit number or not: - Need to check 
-Number = int(input("Enter number:"))
+# Num = int(input("Enter Number:-"))
+# Num1 = Num//100
+# if Num1//10:
+#     print("it is a 3 digit number")
+# else:
+#     print("it is not 3 digit number")
 
 
 
