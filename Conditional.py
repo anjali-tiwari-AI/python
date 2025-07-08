@@ -320,12 +320,12 @@
 # Delhi             Red Fort 
 # Agra              Taj Mahal
 # Jaipur            Jal Mahal
-city = input("Enter city name:")
-city = "Monument"
-city = "Delhi" == "Red Fort"
-city = Agra = "Taj Mahal"
-city = Jaipur = "Jal Mahal"
-print("The Monument name of the city is:", city)
+# city = input("Enter city name:")
+# city = "Monument"
+# city = "Delhi" == "Red Fort"
+# city = Agra = "Taj Mahal"
+# city = Jaipur = "Jal Mahal"
+# print("The Monument name of the city is:", city)
 
 
 #27 WAP to check whether a number entered is three digit number or not: - Need to check 
@@ -348,4 +348,88 @@ print("The Monument name of the city is:", city)
 #     print("it is a 3 digit number")
 # else:
 #     print("it is not a 3 digit number")
+
+
+#WAP to check whether a person is senior citizen or not. - Done
+# Senior = int(input('Enter the age of the person:'))
+# if Senior>=60:
+#     print("Yes, This person comes in the senior citizen list")
+# else:
+#     print("No, This person doesn't comes in the senior citizen list")
+
+
+# WAP to find the lowest number out of the two numbers excepted from user. - Done
+# Num1 = int(input("Enter first number:"))
+# Num2 = int(input("Enter second number:"))
+# if Num1>Num2:
+#     print("Num2 is the lowest number")
+# elif Num1<Num2:
+#     print("Num1 is the lowest number")
+# else:
+#     print("Both number are equal")
+
+
+# WAP to find the Largest number out of the two numbers excepted from user. - Done
+# Num1 = int(input("Enter first number:"))
+# Num2 = int(input("Enter second number:"))
+# if Num1>Num2:
+#     print("Num1 is the Largest number")
+# elif Num1<Num2:
+#     print("Num2 is the Largest number")
+# else:
+#     print("Both number are equal")
+
+
+# WAP to check whether a number (accepted from user) is positive or negative
+# Num = int(input("Enter first number:"))
+# if Num >= 1:
+#     print("it is a positive number")
+# else:
+#     print("it is a negative number")
+
+
+# WAP to check whether a number (Accepted from user) is divisible by 2 and 3 both:- Done
+# Num = int(input("Enter number:"))
+# if Num%2==0 and Num%3==0:
+#     print("Yes", Num, ", this number is divisible from both 2 and 3")
+# else:
+#     print("No", Num, ", it is not divisible from 2 and 3")
+
+
+# WAP to find the largest number out of three number excepted from user - Done
+# Num1 = int(input("Enter first number:"))
+# Num2 = int(input("Enter second number:"))
+# Num3 = int(input("Enter third number:"))
+# if Num1>Num2 and Num1>Num3:
+#     print("Num1 is the greatest number i.e.:", Num1)
+# elif Num2>Num3:
+#     print("Num2 is the greatest number i.e:", Num2) 
+# else:
+#     print("Num3 is the greatest number", Num3)
+
+
+# Accept the temperature in degree celsius of water and check whether it is boiling or not(Boiling point of water in 100* C) - Done
+# Temp_Water = int(input("Temperature in degree celsius of water:"))
+# if Temp_Water>= 100:
+#     print("The water is Boiling")
+# else:
+#     print("The water is not Boiling")
+
+
+# Accept the age of 4 persons and display the youngest one?
+# Person1 = int(input("Enter the age of the first person:-"))
+# Person2 = int(input("Enter the age of the second person:-"))
+# Person3 = int(input("Enter the age of the third person:-"))
+# Person4 = int(input("Enter the age of the fourth person:-"))
+# if Person1<Person2 and Person1<Person3 and Person1<Person4:
+#     print("Person1 is the youngest person")
+# elif Person2<Person3 and Person2<Person4 and Person2<Person1:
+#     print("Person2 is the youngest person")
+# elif Person3<Person1 and Person3<Person2 and Person3<Person4:
+#     print("Person3 is the youngest person")
+# else:
+#     print("Person4 is the youngest person")
+
+
+# WAP to check whether a number is prime or not
 

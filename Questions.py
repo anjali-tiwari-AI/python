@@ -137,12 +137,12 @@ list = [56, 89, 25]
 # print(A , B)
 
 
-#13 WAP to find prime factors of a given integer - only complete divisible by its own number only
-prime = [7, 19, 45, 29, 63, 47, 52, 53, 89]
-i = prime[]
-while i in prime:
-    print(prime[i])
-    i += 1
+#13 WAP to find prime factors of a given integer - only complete divisible by its own number only - Check
+# prime = [7, 19, 45, 29, 63, 47, 52, 53, 89]
+# i = prime[]
+# while i in prime:
+#     print(prime[i])
+#     i += 1
 
 
 
