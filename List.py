@@ -289,8 +289,8 @@
 
 
 # 17 WAP to delete element from array from given index
-List = [12, 34, 56, 78, 90]
-index = 2
+# List = [12, 34, 56, 78, 90]
+# index = 2
 # List.pop(index)
 # print(List)
 #---or----
@@ -329,7 +329,7 @@ index = 2
 # print("The total sum is:", Sum)
 
 
-# 19 WAP to print all even numbers in array
+# 19 WAP to print all even numbers in array - Done
 # List = [45, 25, 26, 76, 23, 94, 81, 46, 10, 28, 37]
 # for i in List:
 #     if i%2 == 0:
@@ -343,24 +343,39 @@ index = 2
 #         print(i , end = " ")
 
 
-# 21 WAP to perform left rotation of array elements by two positions
-A = []
-Size = int(input("Enter the size of the A:"))
-for i in range(Size):
-    Value = int(input("Enter the elements for A:"))
-    A.append(Value)
-print("The original list is:", A)
-Key = A[0]
-Key_2 = A[1]
-for i in range(1, Size-2):
-    A[i-1] = A[i]
-    print(A)
+# 21 WAP to perform left rotation of array elements by two positions - Done
+# A = []
+# Size = int(input("Enter the size of the A:"))
+# for i in range(Size):
+#     Value = int(input("Enter the elements for A:"))
+#     A.append(Value)
+# print("The original list is:", A)
+# Key = A[0]
+# Key_2 = A[1]
+# for i in range(1, Size):
+#     A[i-1] = A[i]
+# for i in range(0, Size):
+#     A[i-1] = A[i]
+# A[Size-1] = Key
+# A[Size-2] = Key_2
+# print("After modification the list would be:", A)
 
-print("After modification the list would be:", A)
 
 
-
-# 22 WAP to perform right rotation in array by 2 positions 
+# 22 WAP to perform right rotation in array by 2 positions - Done
+# A = []
+# Size = int(input("Enter the size of the A:"))
+# for i in range(Size):
+#     Value = int(input("Enter the number of the value:"))
+#     A.append(Value)
+# Key = A[Size-1] 
+# Key_1 = A[Size-2]
+# print("The original list is:", A)
+# for i in range(Size-3, -1, -1): #start, stop, step
+#     A[i+2] = A[i]
+# A[0] = Key
+# A[1] = Key_1
+# print("After modification the list is:", A)
 
 
 # 23 WAP to merge two array - Done
@@ -370,6 +385,20 @@ print("After modification the list would be:", A)
 # print(Merge)
 
 
-# 24 WAP to find highest frequency element in array
+# 24 WAP to find highest frequency element in array - Done
+# A = []
+# Size = int(input("Enter the size of A:"))
+# for i in range(Size):
+#     Value = int(input("Enter the value of A:"))
+#     A.append(Value)
+# Key = int(input("Enter the number which frequency needs to check:"))
+# count = 0
+# print("The original list is:", A)
+# for i in range(Size):
+#     if A[i] == Key:
+#         count += 1
+# print("The Number is:", Key ,"and the frequency is:", count)
+
+
 # 25 WAP to add two number using recursion
 # 26 WAP to find sum of digit of number using recursion.
