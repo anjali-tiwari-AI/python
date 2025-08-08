@@ -4,6 +4,8 @@
 #     if not i in list:
 #         print(i, end = " , ")
 
+
+
 # 2. WAP in python for, in a list(array) 1 - 100 multiple numbers are duplicates, how do you find it
 # List = [1, 2 , 3 , 4 , 5, 6 , 7 , 8, 9 , 10 , 11, 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 , 21 , 
 #         22 , 23 ,24 , 25 , 26 , 27 , 28 , 29 , 30 , 31 , 32 , 33 , 34 , 35, 36 , 37 , 38 , 39 , 40 , 
@@ -12,7 +14,6 @@
 #         79 , 80 , 81 , 82, 83 , 84 , 85 , 86 , 87 , 88 , 89 , 90 , 91, 92 , 93 , 94 , 95 , 96 , 63 ,
 #         97 , 98 , 99 , 100 , 58, 53, 46, 75, 86, 21, 4, 9, 63, 75, 26, 45, 9, 3, 46, 51, 86, 29, 95 , 
 #         75, 46, 42, 19, 28, 43, 85, 42, 42, 22, 16, 19, 11, 22, 33, 44, 88, 66, 77, 88]
-
 # i = 0
 # unique = []
 # Duplicate = []
@@ -23,6 +24,7 @@
 #         Duplicate.append(element)
 # print("The unique value:", unique)
 # print("The duplicate value is:", Duplicate)
+
 
 
 # 3. WAP in python to find first duplicate numbers in a given list(array) -- Done
@@ -45,6 +47,7 @@
 # print("Duplicate_first:", Duplicate_first)
 
 
+
 # 4. WAP in python to remove duplicate elements from array(list) - Done
 # List = [1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 5, 7, 9, 3, 4, 6, 1, 8, 8, 6, 6, 7, 3, 4, 9]
 # unique = []
@@ -56,6 +59,7 @@
 #         duplicate.append(element)
 # print("unique =", unique)
 # print("Duplicate:", duplicate)
+
 
 
 # 5. WAP in python for, given two arrays 1, 2, 3, 4, 5 and 2, 3, 1, 0, 5 
@@ -70,6 +74,7 @@
 #         print(element)
 #     elif element in List2 and not List1:
 #         print(element)
+
 
 
 # 6. WAP in python for, how to compare two array is equal in size or not. -- not able to solve
@@ -94,6 +99,7 @@
 #         break
 
 
+
 # 7.1. WAP in python, to find smallest number in array. - Done
 # A = [] # 5, 9, 2, 4, 6, 3, 7
 # Size = int(input("Enter the size of the list:"))
@@ -105,6 +111,7 @@
 #     if A[i]<Minimum:
 #         Minimum = A[i]  
 # print("Minimum value is:", Minimum) 
+
 
 
 # 7.2. WAP in python, to find largest number in array. - Done
@@ -127,6 +134,7 @@
 #         Maximum = A[i]
 # print("The all numbers is:", A)
 # print("The maximum number is:", Maximum)        
+
 
 
 # 8 WAP in python, to find second highest number in an array - Done
@@ -181,6 +189,7 @@
 # print("The second highest number is:", High2)
 
 
+
 # 9 WAP in python, to find top two maximum number in an array - Done
 # Array = [42, 75, 34, 98, 23, 10, 46, 37]
 # Max1 = Array[0]
@@ -196,6 +205,7 @@
 # print("The largest first and second maximum number is:", Max1 , "and", Max2)
 
 
+
 # 10 WAP to print array in reverse order - [Starting:Ending:step(increment or decrement)] - Done
 # List = [45, 36, 76, 96, 82, 23, 56, 61]
 # # print(List[-1::-1])
@@ -207,7 +217,18 @@
 #     print(List[i], end = " ")
 
 
-# 11 WAP to reverse an array in two ways - didn't understand the question
+
+# # 11 WAP to reverse an array - Done
+# List = [1, 2, 3, 4]
+# Check_list = [12, 45, 78, 32, 65, 98]
+# Rev = []
+# for i in range(len(List)):
+#     Lt = List[i]
+#     Rev.append(Lt)
+# if Rev == Check_list:
+#     print("Yes, both the list is same:", Rev)
+# else:
+#     print("No, it is not same becuase the list is", Rev, "it is a list after comparing from the", Check_list)
 
 
 
@@ -219,10 +240,12 @@
 # print(count)
 
 
+
 # 13 WAP to insert an element at the end of an array
 # Array = [42, 85, 36, 61, 52, 29, 75, 94, 16]
 # Array.append(789)
 # print(Array)
+
 
 
 # 14 WAP to insert element at a given location in array - List.insert(index,value) - Need to check
@@ -401,4 +424,22 @@
 
 
 # 25 WAP to add two number using recursion
-# 26 WAP to find sum of digit of number using recursion.
+# def Add_2_no(A, B):
+#     Sum = A+B
+#     print(Sum)
+#     return
+# Add_2_no(10, 15)
+
+
+# # 26 WAP to find sum of digit of number using recursion. - Done
+# def Sum_of_digits_of_no(Num):
+#     Sum = 0
+#     while Num>0:
+#         Sum = Sum + Num%10
+#         print(Sum)
+#         Num = Num//10
+# Sum_of_digits_of_no(int(input("Enter the number for which you wants to find sum:")))
+
+
+
+
