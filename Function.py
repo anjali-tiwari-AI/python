@@ -701,29 +701,74 @@
             
 # HCF_of_two_numbers()
 
-#=================================================================================================================
+#===================== NNED TO ASK ============================================================================================
 # 49. Create a function that finds the LCM of two numbers. 
-def LCM_of_two_numbers():
-    First_no = int(input("Enter the first number: "))
-    Second_no = int(input("Enter the second number: "))
-    LCM = []
-    i = 1
-    for i in range(First_no and Second_no):
-        if First_no // i == 0 and Second_no // i == 0:
-            LCM.append(i)
-            print(LCM)
-LCM_of_two_numbers()
-  
+# def LCM_of_two_numbers():
+# #   "Calculates the Greatest Common Divisor (GCD) of two numbers using the Euclidean algorithm"
+#     First_no = int(input("Enter the first number: "))
+#     Second_no = int(input("Enter the second number: "))
+#     GCD = 0
+#     for i in range (First_no and Second_no):
+#         j = i+1
+#         if First_no//(j) == 0 and Second_no//(j) == 0:
+#             GCD.append(j)
+#             j = i
+#             print(GCD)
+#         else:
+#             continue
+# LCM_of_two_numbers()
 
-#====================================================================================================================
+#============== NEED TO CHECK ======================================================================================================
 # 50. Write a function that checks if a number is perfect. 
 
-#===============================================================================================================
+# def number_is_perfect():
+#     Perfect = int(input("Enter the number: "))
+#     Per_no = []
+#     i = 1
+#     while i == Perfect:
+#         if Perfect % i == 0:
+#             Per_no.append(i)
+#             i += 1
+#             print(Per_no)
+#         else:
+#             continue
+
+# def Add_of_divisers():
+#     Add = 0
+#     for j in Per_no:
+#         Add += j
+#         print(Add)
+
+# number_is_perfect() 
+# Add_of_divisers() 
+
+
+
+#============================================================================================================================================
+
 # • Intermediate Level (50 Questions) 
 # Focus: default arguments, keyword arguments, recursion, variable scope, higher-order functions, 
 # lambda, *args and **kwargs. 
+
+#======================= DONE ========================================================================================================================
 # 1. Write a function with default parameters for a greeting message. 
+# def default_parameters_for_greeting_message(Name = "Dear"):
+#     print(f"Hello {Name}, welcome to this platform")
+    
+# default_parameters_for_greeting_message("Anjali")
+
+#--------------------------
+# def hello(name="Guest"):
+#     print("Hello",name)
+
+print("hello")
+
+
+#================================================================================================================================================
 # 2. Create a recursive function to calculate factorial of a number. 
+
+
+#================================================================================================================
 # 3. Write a recursive function to print Fibonacci sequence. 
 # 4. Define a function that accepts *args and returns their sum. 
 # 5. Create a function that accepts **kwargs and prints them. 

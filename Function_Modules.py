@@ -59,4 +59,12 @@ import Function
 # Function.perimeter_of_circle
 
 #=================================================
-from Function import counts_lowercase_letters_in_string
+# from Function import counts_lowercase_letters_in_string
+
+#======================================================
+from Function import default_parameters_for_greeting_message
+
+
+import math as m 
+
+print(m.sin(30))
