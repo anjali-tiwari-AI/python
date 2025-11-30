@@ -1,7 +1,39 @@
+# Duplicate or copy past (Alt + Shift + downarrow)
+
+
+#----------Indexing in string------------------------
+# Single = input("Enter the string: ")
+# print(Single[2])
+
+# Index = input("Enter the string: ")
+# print(Index[1 : :])
+
+
+#-----------Slicing--------------------------------
+#Syntax = String[Start : End : Step ]
+# Slicing = input("Enter the string: ")
+# print(Slicing[1 :]) #start from one till the end point
+# print(Slicing[ :4]) #start from 1 upto 4
+# print(Slicing[ : ]) # Will give start to end point
+# print(Slicing[ : :-2]) #Step indexing
+# print(Slicing[0:5])
+# print(Slicing[1 : len(Slicing) : 1])
+
+
+#--------------Basic operations in string (Concatenation , Repetation , Membership, len , escape character )----------------------
+First_name = input("Enter the user first name: ")
+Last_name = input("Enter the user last name: ")
+# print(First_name + " " + Last_name) # Concatenation
+# print(First_name * 3) # Repetation
+# print("j" in First_name) # Membership
+# print("z" not in First_name) # Not a Membership
+# print(len(First_name + Last_name)) # Gives length of the string
 
 
 
 
+
+# print(dir(str))
 # print(dir(str))
 
 """['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', 

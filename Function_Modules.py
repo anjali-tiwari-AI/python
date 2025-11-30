@@ -68,3 +68,7 @@ from Function import default_parameters_for_greeting_message
 import math as m 
 
 print(m.sin(30))
+ceil
+Floor
+tan
+cos

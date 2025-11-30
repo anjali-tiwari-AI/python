@@ -1,3 +1,266 @@
+# Number = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+# #Slicing from index 1 to 3
+# print(Number[1 : 4])
+
+# #Slicing from start to index 2
+# print(Number[ :3])
+
+# #Slicing all alternate elements
+# print(Number[0: :2])
+
+# #Slicing with negative indices
+# print(Number[-4:-1])
+
+# #Reverse List
+# print(Number[ : :-1])
+
+#--------------LIST SLICING---------------------
+
+#List_name [Start : Stop : Step]
+
+# Slicing = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
+#Index  =   0   1   2   3   4   5   6   7   8   9   10    11  12
+#Index =   -13 -12 -11 -10 -9  -8  -7  -6  -5  -4  -3    -2   -1
+
+# first 3 elements of the list 
+# print(Slicing[0 :3])
+
+# #Last 3 elements
+# print(Slicing[-3 :])
+
+#Whole list
+# print(Slicing[ : :])
+
+#Alternative    
+# print(Slicing[ : :2])   #Step value is 2
+
+# #Reverse a list
+# print(Slicing[ : :-1])      #Step -1
+
+#-------------------Modifying list (Change, Append, Remove) ---------------------------
+# Fruits = ["Apple", "Banana", "Cherry"]
+
+# #Changing a elements in a list
+# Fruits[1] = "Blueberry"
+# print(Fruits)
+
+# #Adding a elements in a list
+# Fruits.append("Mango")
+# print(Fruits)
+
+
+# #Removing a elements in a list
+# Fruits.remove("Apple")
+# print(Fruits)
+
+#--------------------------------------LIST METHODS---------------------------------------------------------------------------------------
+#============================================================================================================================================
+# print(dir(list))
+# Methods = [append', 'clear', 'copy', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+
+#================================================================================================================================================
+#-------------------Append (Add at the end)--------------------------------------------------------------------------------------------------
+# Fruits = ["Apple", "Banana", "Cherry"]
+# Fruits.append("Orange")
+# print(Fruits)
+
+
+#--------------------Extend (Adding two list or add new list in a existing list)----------------------------------------------------------------
+# Fruits = ["Apple", "Orange"]
+# More_Fruits = ["Cherry", "Mango"]
+# Fruits.extend(More_Fruits)
+# print(Fruits)
+
+
+#---------------------Insert (Add something(Elements) in a particular index) ------------------------------------------------------------------
+# Fruits = ["Apple", "Orange"]
+# Fruits.insert(1, "Blueberry")
+# print(Fruits)
+
+
+#------------------Remove (It removes a particular elements or from a index or first elements of the given input)---------------------------------
+# Fruits = ["Apple", "Banana", "Orange", "Banana"]
+# Fruits.remove("Banana")
+# print(Fruits)
+
+#-----------------Clear (Remove the whole list)-----------------------------------------------------------------------------------------------
+# Num = [12, 14, 16, 18, 20]
+# Num.clear()         #Empty List
+# print(Num)
+
+
+#----------------Finding index with range and without range-------------------------------------------------------------------------------------
+
+#----------Without range---------------------------
+# Country = ["India", "Uk", "USA", "China", "Japan"]
+# Index = Country.index("USA")
+# print(Index)
+
+#--------With range (Within a range - will find the elements after the given range)-------
+# Country = ["India", "Uk", "USA", "China", "Japan", "USA"]
+# Index = Country.index("USA", 4)
+# print(Index)
+
+
+#-------------Count (Counts the total a given elements-------------------------------------------------------------------------------------------------------------------------
+# Country = ["India", "Uk", "USA", "China", "USA", "Japan", "USA"]
+# Counting = Country.count("USA")
+# print(Counting)
+
+
+#-----------Sorting list (Ascenting, Decending, Key - Sorting as per the length--------------------------------------------------------------------------------------------------
+# Country = ["India", "Uk", "USA", "China", "USA", "Japan", "USA", "Australia"]
+# Country.sort()  #By default sort in ascending order
+# print(Country)
+
+
+# Country.sort(reverse = True)  #Sort in decending order
+# print(Country)
+
+
+# #Sorting with a key
+# Country.sort(key = len)    #Ascending order
+# print(Country)
+
+
+# #Sorting with a key
+# Country.sort(key = len, reverse = True)   #Descending order
+# print(Country)
+
+
+#----------------------Pop - Remove with index value and return the removed value ------------------------------------------------------------------
+# Number = [10, 20, 30, 40, 50]
+# Popped = Number.pop(2)
+# print(Popped)
+# print(Number)
+
+
+#------Pop with default - remove last value------------
+# Number = [10, 20, 30, 40, 50]
+# Last = Number.pop()
+# print(Last)
+# print(Number)
+
+
+
+
+#================================ QUESTIONS ===================================================================================================================
+#------------Chetan sir's questions------------------------
+
+# Sum of list, Multiplication of list, Highest value, Second highest, Lowest value, Second lowest
+# L = []
+# N = int(input("How many values:- "))
+# for i in range(0, N):
+#     val = input("Enter the values:-")
+#     L.append(val)
+# print(L)
+
+
+#--------Sum ---- done------
+# Sum = 0
+# for j in L:
+#     Sum = Sum + int(j)
+# print(Sum)
+
+
+# While Loop - need to ask 
+# j = list[0]
+# Sum = 0
+# while j < L:
+#     Sum = j + Sum
+#     j += 1
+# print(Sum)
+    
+    
+#---Multiplication- DONE ------
+# Multi = 1
+# for i in L:
+#     Multi = int(i) * Multi
+# print(Multi)
+
+#While loop - Need to ask 
+# Multi = 1
+# j = 1
+# while j > L:
+#     Multi = int(j) * int(Multi)
+# print(Multi)
+
+
+# #-----Highest and second highest value --------
+# High = int(0)
+# Second_highest = int(0)
+# for i in L:
+#     if int(i) > High and int(i) > Second_highest:
+#         Second_highest = High
+#         High = int(i)
+#     elif int(i) < High and int(i) > Second_highest:
+#         Second_highest = int(i)
+# print(f"The heighst value is:", High)
+# print(f"The second highest value is:", Second_highest)
+        
+         
+#--------Lowest and second lowest-----------------------
+# Lowest = max(L)
+# Second_lowest = max(L)
+# j = 0
+# for i in L:
+#     if int(i) < int(Lowest):
+#         Lowest = int(i)
+#     elif int(i) > int(Lowest) and int(i) < int(Second_lowest):
+#         Second_lowest = int(i)
+# print(f"The lowest value is {Lowest}")
+# print(f"The second lowest value is {Second_lowest}")
+
+
+#-----------Sum of even and odd, how many even and odd numbers----------
+# Sum_of_Even_no = 0
+# Sum_of_Odd_no = 0
+# Count_of_even_no = 0
+# Count_of_odd_no = 0
+# for i in L:
+#     if int(i) % 2 == 0:
+#         Sum_of_Even_no = int(i) + Sum_of_Even_no
+#         Count_of_even_no += 1
+#     else:
+#         Sum_of_Odd_no = int(i) + Sum_of_Odd_no
+#         Count_of_odd_no += 1
+# print(f"The sum of the even numbers is {Sum_of_Even_no}")
+# print(f"The sum of the odd number is {Sum_of_Odd_no}")
+# print(f"The total number of even number is {Count_of_even_no}")
+# print(f"The total number of odd number is {Count_of_odd_no}")
+
+
+#--NEED TO ASK-------------Prime, Not Prime, Number of prime value and not prime value, sum of prime value and not prime value------------------------
+# Prime_No = []
+# Not_Prime_No = []
+# j = 1
+# Count = 0
+# for i in L:
+#     if int(i) % int(j) == 0:
+#         j += 1
+#         Count += 1
+#         Not_Prime_No.append(i)
+#     else:
+#         Prime_No.append(i)
+#         Count += 1
+
+ 
+    
+# print(f"The prime number is {Prime_No}")
+# print(f"The not prime number is {Not_Prime_No}")
+
+
+#--------------------------Palindrome-------------------------------
+# Palindrome_Count = input("Enter the number of the values:- ")
+# Palindrome = []
+# for i in Palindrome_Count:
+#     Values = input("Enter the values: ")
+    
+
+
+#===============================================================================================================================================
+#---------------------------------------------------Book Questions-------------------------------------------------------------------------
 # WAP in python, In list 1 - 100 numbers are stored, one number is missing how do you find it.
 # list = [1, 5, 8, 11, 23, 35, 49, 56, 68, 73, 82, 91]
 # for i in range(1, 101):
