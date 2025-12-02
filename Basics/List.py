@@ -157,7 +157,7 @@
 # print(L)
 
 
-#--------Sum ---- done------
+#--------Sum -----------------------Done
 # Sum = 0
 # for j in L:
 #     Sum = Sum + int(j)
@@ -173,7 +173,7 @@
 # print(Sum)
     
     
-#---Multiplication- DONE ------
+#---Multiplication--------------------- Done
 # Multi = 1
 # for i in L:
 #     Multi = int(i) * Multi
@@ -187,7 +187,7 @@
 # print(Multi)
 
 
-# #-----Highest and second highest value --------
+# #-----Highest and second highest value --------Done
 # High = int(0)
 # Second_highest = int(0)
 # for i in L:
@@ -200,7 +200,7 @@
 # print(f"The second highest value is:", Second_highest)
         
          
-#--------Lowest and second lowest-----------------------
+#--------Lowest and second lowest-----------------------Done
 # Lowest = max(L)
 # Second_lowest = max(L)
 # j = 0
@@ -213,7 +213,7 @@
 # print(f"The second lowest value is {Second_lowest}")
 
 
-#-----------Sum of even and odd, how many even and odd numbers----------
+#-----------Sum of even and odd, how many even and odd numbers----------Done
 # Sum_of_Even_no = 0
 # Sum_of_Odd_no = 0
 # Count_of_even_no = 0
@@ -231,32 +231,120 @@
 # print(f"The total number of odd number is {Count_of_odd_no}")
 
 
-#--NEED TO ASK-------------Prime, Not Prime, Number of prime value and not prime value, sum of prime value and not prime value------------------------
-# Prime_No = []
-# Not_Prime_No = []
-# j = 1
+#-need to check-------------Prime, Not Prime, Number of prime value and not prime value, sum of prime value and not prime value------------------------
+# Number = int(input("Enter the number of the list:-"))
+# List = []
+# for i in range(Number):
+#     Values = int(input("Enter the values:- "))
+#     List.append(Values)
+# print(List)
 # Count = 0
-# for i in L:
-#     if int(i) % int(j) == 0:
-#         j += 1
+
+# for j in range(2, List):
+#     if Values % j == 0:
 #         Count += 1
-#         Not_Prime_No.append(i)
+
+        
+
+# for l in List:
+#     if Count == 2:
+#         print("It is prime number:-", j)
 #     else:
-#         Prime_No.append(i)
-#         Count += 1
-
- 
-    
-# print(f"The prime number is {Prime_No}")
-# print(f"The not prime number is {Not_Prime_No}")
+#         print("it is a composit number:-", j)
+        
 
 
-#--------------------------Palindrome-------------------------------
+
+
+
+#--------------------------Palindrome-------------------------------NEED TO CHECK
 # Palindrome_Count = input("Enter the number of the values:- ")
 # Palindrome = []
 # for i in Palindrome_Count:
 #     Values = input("Enter the values: ")
     
+#--------------Armstrong---------------------NEED TO ASK
+# Armstrong = input('Enter the number: ')
+# Count = 0
+# Arm = []
+# Sum = 0
+# for i in Armstrong:
+#     Power = int(i)**len(Armstrong)
+#     Sum = Sum + Power
+
+
+# if Armstrong == Sum:
+#     print('Entered number is armstrong: ', Armstrong)
+# else:
+#     print("Entered number is not armstrong:", Armstrong)
+    
+
+#-----------Table of the list-----------------NEED TO ASK
+# Table = input("Enter the number:- ")
+# for i in range(1, 11):
+#     print(Table , "x", i , " = " , Table*i)
+
+
+#----------- Factorial ---------------------------------
+# Factorial = input('Enter the number: ')
+# Sum = 1
+
+
+
+#------------Ascending and descending order --------------Done 
+# Asc = int(input("Enter the Ascending number:- "))
+
+# Ascending = []
+
+# for i in range(Asc):
+#     Asc_value = int(input("Enter the values:- "))
+#     Ascending.append(Asc_value)
+
+# for i in range(0, Asc):
+#     for j in range(i+1, Asc):
+#         if Ascending[i] > Ascending[j]:
+#             Temp = Ascending[i]
+#             Ascending[i] = Ascending[j]
+#             Ascending[j] = Temp
+
+# print("The accending table is:", Ascending)
+
+
+# Dec = int(input("Enter the Decending number:- "))
+# Decending = []
+# for i in range(Dec):
+#     Dec_value = int(input("Enter the values:- "))
+#     Decending.append(Dec_value)
+
+# for k in range(0, Dec):
+#     for L in range(k+1, Dec):
+#         if Decending[k] < Decending[L]:
+#             Temp = Decending[k]
+#             Decending[k] = Decending[L]
+#             Decending[L] = Temp
+
+# print("The decending table is: ", Decending)
+    
+    
+#----------------Reverse the last number and add to new list ------------------------Done
+# Number1 = int(input("Enter the number of the list1:- "))
+# Number2 = int(input('Enter the number of the List2:- '))
+# List1 = []
+# List2 = []
+# New_list = []
+# for i in range(Number1):
+#     Values1 = int(input("Enter the value of the first list:-"))
+#     List1.append(Values1)
+    
+# for j in range(Number2):
+#     Values2 = int(input("The the values of the second list:- "))
+#     List2.append(Values2)
+    
+# print("The first list is:", List1)
+# print("The second list is:", List2)
+
+# New_List = List2[ :-2:-1] + List1
+# print("The new list is:- ", New_List)
 
 
 #===============================================================================================================================================
