@@ -283,21 +283,39 @@
 # print(Reverse)
         
    
-#--------------Armstrong---------------------NEED TO ASK
-# Armstrong = input('Enter the number: ')
-# Count = 0
+#--------------Armstrong---------------------Done 
+# Num = int(input('How many values: '))
+# Yes_Arm_list = []
+# Not_Arm_list = []
 # Arm = []
-# Sum = 0
-# for i in Armstrong:
-#     Power = int(i)**len(Armstrong)
-#     Sum = Sum + Power
+
+# for i in range(Num):
+#     Value = int(input("Enter the values: "))
+#     Arm.append(Value)
+# print(Arm) 
+
+# for i in Arm:
+#     lenth = 0
+#     print(i)   
+#     Armstrong = 0
+#     X = i
+#     Y = i
+#     while X != 0: # It is to know the length of the number
+#         length += 1
+#         X//=10
+#     while Y != 0:
+#         Last_digit = Y%10
+#         Armstrong = Armstrong + (Last_digit**length)
+#         Y//=10
+#     if Armstrong == i:
+#         Yes_Arm_list.append(i)
+#     else:
+#         Not_Arm_list.append(i)
+        
+# print("Yes, The armstrong list is: ", Yes_Arm_list)
+# print("No, with aremstrong list is: ", Not_Arm_list)
 
 
-# if Armstrong == Sum:
-#     print('Entered number is armstrong: ', Armstrong)
-# else:
-#     print("Entered number is not armstrong:", Armstrong)
-    
 
 #-----------Table of the list-----------------DONE
 # Table = []
