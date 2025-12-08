@@ -19,9 +19,9 @@
 
 #List_name [Start : Stop : Step]
 
-# Slicing = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
-#Index  =   0   1   2   3   4   5   6   7   8   9   10    11  12
-#Index =   -13 -12 -11 -10 -9  -8  -7  -6  -5  -4  -3    -2   -1
+# Slicing = [10  5   6   7   8   9   10    11  12
+#Index =   -13 -12 -11 -10 -9  , 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130]
+#Index  =   0   1   2   3   4 -8  -7  -6  -5  -4  -3    -2   -1
 
 # first 3 elements of the list 
 # print(Slicing[0 :3])
@@ -187,7 +187,14 @@
 # print(Multi)
 
 
-# #-----Highest and second highest value --------Done
+# # #-----Highest and second highest value --------Done
+# L = []
+# N = int(input("How many values:- "))
+# for i in range(0, N):
+#     val = input("Enter the values:-")
+#     L.append(val)
+# print(L)
+
 # High = int(0)
 # Second_highest = int(0)
 # for i in L:
@@ -231,38 +238,51 @@
 # print(f"The total number of odd number is {Count_of_odd_no}")
 
 
-#-need to check-------------Prime, Not Prime, Number of prime value and not prime value, sum of prime value and not prime value------------------------
-# Number = int(input("Enter the number of the list:-"))
-# List = []
-# for i in range(Number):
-#     Values = int(input("Enter the values:- "))
-#     List.append(Values)
-# print(List)
-# Count = 0
+#--------------Prime, Not Prime, Number of prime value and not prime value, sum of prime value and not prime value-----------------DONE-------
+# Num = int(input("Enter the total numbers:-"))
+# Number = []
+# Composit = []
+# Prime = []
 
-# for j in range(2, List):
-#     if Values % j == 0:
-#         Count += 1
+# for i in range(Num):
+#     Values = int(input("Enter the all values:- "))
+#     Number.append(Values)
+# print("All numbers are:", Number)   
 
+# for i in Number:
+#     for j in range(2, i):
+#         if i % j == 0:
+#             Composit.append(i)
+#             break
+#     if i == j+1:
+#         Prime.append(i)
+
+# print("Only composit number is: ", Composit)
+# print("Only prime number is: ", Prime)
+        
         
 
-# for l in List:
-#     if Count == 2:
-#         print("It is prime number:-", j)
-#     else:
-#         print("it is a composit number:-", j)
-        
-
-
-
-
-
-#--------------------------Palindrome-------------------------------NEED TO CHECK
-# Palindrome_Count = input("Enter the number of the values:- ")
+#--------------------------Palindrome-------------------------------NEED TO ASK
+# Palindrome_Count = int(input("Enter the number of the values:- "))
 # Palindrome = []
-# for i in Palindrome_Count:
-#     Values = input("Enter the values: ")
-    
+# for i in range(0, Palindrome_Count):
+#     Value = int(input("Enter the values:- "))
+#     Palindrome.append(Value)
+# print(Palindrome)
+
+
+# Rev = 0
+# Reverse = []
+
+# for i in Palindrome:
+#     while i >0:
+#         Rev = i*10 + i%10
+#         Reverse.append(Rev)
+#         Rev = Rev//10
+        
+# print(Reverse)
+        
+   
 #--------------Armstrong---------------------NEED TO ASK
 # Armstrong = input('Enter the number: ')
 # Count = 0
@@ -279,17 +299,46 @@
 #     print("Entered number is not armstrong:", Armstrong)
     
 
-#-----------Table of the list-----------------NEED TO ASK
-# Table = input("Enter the number:- ")
-# for i in range(1, 11):
-#     print(Table , "x", i , " = " , Table*i)
+#-----------Table of the list-----------------DONE
+# Table = []
+
+# No_of_table = int(input("Enter the number of the all table:- "))
+# for i in range(No_of_table):
+#     Value = int(input("Enter the values of the table:- "))
+#     Table.append(Value)
+
+# print("The table which needs to print is:", Table)
+
+# for j in Table:
+#     for k in range(1, 11):
+#         print(j , "*", k , "=" , j*k)
+#         k += 1
+#     print("------------------")
+#     print()
+
+#----------- Factorial ---------------------------------Done
+# List_of_factorial_number = []
+
+# Factorial = int(input('Enter the number of times: '))
+# for i in range(Factorial):
+#     Factorial_values = int(input("Enter the values of the factorial: "))
+#     List_of_factorial_number.append(Factorial_values)
+# print(List_of_factorial_number)
 
 
-#----------- Factorial ---------------------------------
-# Factorial = input('Enter the number: ')
-# Sum = 1
+# Values_of_factorial = []
+# for i in List_of_factorial_number:
+#     Sum = 1
+#     for j in range(1, i+1):
+#         print(j, end = " ")
+#         Sum = j*Sum
+#         if j < i:
+#             print("*", end = " ")
+#     print(" = ", Sum)
+#     Values_of_factorial.append(Sum)
 
-
+# print("The factorial of the value", List_of_factorial_number ,"is: ", Values_of_factorial)
+    
 
 #------------Ascending and descending order --------------Done 
 # Asc = int(input("Enter the Ascending number:- "))

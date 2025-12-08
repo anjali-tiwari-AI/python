@@ -2,8 +2,8 @@
 # Arithmatic Operators Example
 # + , - , % , * , ** , /
 
-a = 7
-b = 2
+a = 70
+b = 20
 # print("Addition of", a, "and", b, "is", a+b)
 # print("Subtraction of", a, "and", b, "is", a-b)
 # print("Multiplication of", a, "and", b, "is", a*b)
@@ -194,10 +194,10 @@ b = 2
 
 
 #2 Write a program to reverse an integer in python
-A = "Anjali-Tiwari"
-print(len(A))
-for I in range (len(A)-1, -1, -1):
-    print(A[I], I)
+# A = "Anjali-Tiwari"
+# print(len(A))
+# for I in range (len(A)-1, -1, -1):
+#     print(A[I], I)
 
 
 #3 What is the output of the following addition (+) operator (Ask - 10, 20 and 10, 20, 30, 40)
