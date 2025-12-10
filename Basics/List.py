@@ -295,7 +295,7 @@
 # print(Arm) 
 
 # for i in Arm:
-#     lenth = 0
+#     length = 0
 #     print(i)   
 #     Armstrong = 0
 #     X = i
@@ -313,7 +313,7 @@
 #         Not_Arm_list.append(i)
         
 # print("Yes, The armstrong list is: ", Yes_Arm_list)
-# print("No, with aremstrong list is: ", Not_Arm_list)
+# print("No, without aremstrong list is: ", Not_Arm_list)
 
 
 

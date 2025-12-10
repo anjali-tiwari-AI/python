@@ -21,8 +21,8 @@
 
 
 #--------------Basic operations in string (Concatenation , Repetation , Membership, len , escape character )----------------------
-First_name = input("Enter the user first name: ")
-Last_name = input("Enter the user last name: ")
+# First_name = input("Enter the user first name: ")
+# Last_name = input("Enter the user last name: ")
 # print(First_name + " " + Last_name) # Concatenation
 # print(First_name * 3) # Repetation
 # print("j" in First_name) # Membership
@@ -46,7 +46,7 @@ Last_name = input("Enter the user last name: ")
  'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']"""
 
 
-#==========================================================================================================================================
+#=========================== DONE ===============================================================================================================
 #1 Write a method in which you will "remove" any given character from a string
 # String = input('Enter the string:')
 # Removing = input("Enter the character which you wants to remove from string: ")
@@ -70,10 +70,35 @@ Last_name = input("Enter the user last name: ")
 
 #===============================================================================================================================================================================
 #3 Write a program to check if two strings are Anagram
+Anagram1 = input('Enter the first string:- ')
+Anagram2 = input("Enter the second string:- ")
+
+Ana1 = []
+Ana2 = []
+
+for i in Anagram1:
+    for j in Anagram2:
+        if i in Anagram2 and j in Anagram1:
+            Ana1.append(i) and Ana2.append(j)
+        else:
+            continue
+        
+if i in Ana2 and j in Ana1:
+    if len(Ana1) == len(Ana2):
+        print("Yes, the entered both string are Anagram i.e.", Anagram1 , "and", Anagram2)
+else:
+    print("No, the entered both string are not Anagram i.e.", Anagram1, "and", Anagram2)
+            
+            
+            
+        
+
+
+#===========================================================================================================================================
 #4 Write a program to check a string is palindrome or not
 #5 Write a program to check given character is vowel or consonant
 #6 Write a program to check given character is digit or not
-#7 Write a program  to replace the string space with a given character
+#7 Write a program to replace the string space with a given character
 #8 Write a program to convert lowercase character to uppercase of string
 #9 Write a program to convert lowercase vowels to uppercase in string
 #10 Write a program to delete vowels in a given string
