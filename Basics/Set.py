@@ -125,7 +125,7 @@ not to produce a new value."""
 # print("Their is no change in set2 after difference_update method Set2", Set2)
 
 
-#---------------discard-------------------------Remove built-in through error if element is not in set but discard element doesn't 
+#---------------discard----------------Remove built-in through error if element is not in set but discard element doesn't works
 # S = set()
 # Number = int(input("Enter the number of times of the values:- "))
 
@@ -176,11 +176,161 @@ not to produce a new value."""
 # print(S2)
 
 
-#---------------isdisjoint---------------------
+#----isdisjoint-------if their is a relationship in 2 sets then it is not disjoint and if their is no relationship then it is disjoint
+# if no common elements in both sets is called isdisjoint
+
+# Set1 = set()
+# Set1_no = int(input('Enter the number of times for set1:- '))
+# for i in range(1, Set1_no+1):
+#     Value = input('Enter the values:- ')
+#     Set1.add(Value)
+
+
+# Set2 = set()
+# Set2_no = int(input('Enter the number of times for set1:- '))
+# for i in range(1, Set2_no+1):
+#     Value = input('Enter the values:- ')
+#     Set2.add(Value)
+
+
+# print("Set1 values:", Set1)
+# print("Set2 values:", Set2)
+# print("Give the common values in intersection:-", Set1.intersection(Set2))
+# print("Do we have common elements or it is disjoint(No common value):-", Set1.isdisjoint(Set2))
+
+
+#-----------issubset--------When a set's all emements are present in another set then it is subset else not and output (true or false)
+# Nums1 = set(range(1, 101))
+# Nums2 = {12, 45, 36, 84, 26, 75}
+# Is_Sub_set = Nums2.issubset(Nums1)
+# print(Is_Sub_set)     #True output
+
+# Is_Sub_set = Nums1.issubset(Nums2)
+# print(Is_Sub_set)               #False Output
+
+
+#-----------Issuperset---------True if all items in the specified set exists in the original set, otherwise it return false
+# A = {1, 2, 3, 4, 5, 6}
+# B = {1, 2, 3}
+# print(A.issuperset(B))
 
 
 
+#----Pop-----It removes the first element from the output but the their is no order of the output that's why the element can be anything
+# Set1 = set()
+# Set2 = set()
+ 
+# Numbers_set1 = int(input("Enter the number of times of the values in set1: "))
+# Numbers_set2 = int(input("Enter the number of times of values in set2: "))
+
+# for i in range (1, Numbers_set1+1):
+#     Values_Set1 = input("Enter the set1 values: ")
+#     Set1.add(Values_Set1)
+
+# for j in range(1, Numbers_set2+1):
+#     Values_Set2 = input("Enter the set2 values: ")
+#     Set2.add(Values_Set2)
+    
+
+# print("Before pop method set1 is ", Set1)
+# print("Before pop method set2 is ", Set2)
+# print("The element which is going to removed from pop method is in set1:", Set1.pop())
+# print("After pop method the output of the set1 is ", Set1)
+# print("The element which is going to removed from pop method is in set2:", Set2.pop())
+# print("After pop method the output of the set2 is ", Set2)
 
 
-# ', '', '', 'issubset', # 'issuperset', 
-# 'pop', # 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update
+#----------Remove-------------it removes a particular element from the set
+# Remove1 = set()
+# Remove2 = set()
+
+# Values_Remove1 = int(input('Enter the number of times you wants to enter the values in Remove1 set: '))
+# Values_Remove2 = int(input('Enter the number of times you wants to enter the values in remove2 set: '))
+
+# for i in range(1, Values_Remove1 +1):
+#     Remove1_values = input("Enter the remove1 set's values: ")
+#     Remove1.add(Remove1_values)
+    
+
+# for j in range(1, Values_Remove2+1):
+#     Remove2_values = input("Enter the remove2 set's values: ")
+#     Remove2.add(Remove2_values)
+
+# print("Original values of remove1 set is: ", Remove1)
+# print("original values of remove2 set is: ", Remove2)
+
+# print("After remove method the values of set1 is:", Remove1.remove(input("Enter the values which you wants to remove from Remove1 set:")))
+# print("After remove method the values of set2 is:", Remove2.remove(input('Enetr the values which you wants to remove from Remove2 set:')))
+
+# print("After remove built-in method the new set of the remove1 is:", Remove1)
+# print("After remove built-in method the new set of the remove2 is:", Remove2)
+
+
+#----------symmetric_difference---------------------------------it returns uncommon elements of both the sets
+# S1 = {10, 20.5, "Python", (10, 20)}
+# S2 = {20, 3.5, "Python 3", (10, 20), (50, 10)}
+
+# Res = S1.symmetric_difference(S2)
+# print(Res)
+
+
+#----------Symmetric_difference_update---------It modifies an existing set to contain only the elements that 
+# are present in either the original set or a second specified set, but not in both (their intersection)
+# Symmetric_difference1 = set()
+# Symmetric_difference2 = set()
+
+
+# # S1 = {10, 20.5, "Python", (10, 20), ("India", "China", "USA"), "Hello India"}
+# # S2 = {20, 3.5, "Python 3", (10, 20), (50, 10), ("India, "China", "USA")}
+
+
+# S1 = Symmetric_difference1 
+# S2 = Symmetric_difference2
+
+# Symmetric_difference1_Count = int(input('Enter the number of times you wants to enter the values in Symmetric_difference1 : '))
+# Symmetric_difference2_Count = int(input('Enter the number of times you wants to enter the values in Symmetric_difference1 : '))
+
+# for i in range(1, Symmetric_difference1_Count+1):
+#     Values1 = input("Enter the values for first Symmetric_difference1: ")
+#     Symmetric_difference1.add(Values1)
+    
+# for j in range(1, Symmetric_difference2_Count+1):
+#     Values2 = input("Enter the values for first Symmetric_difference2: ")
+#     Symmetric_difference2.add(Values2)
+
+# print("Before Symmetric_difference_update method: ", S1)
+# print("Before Symmetric_difference_update method: ", S2)
+
+# S1.symmetric_difference_update(S2)
+# print("After Symmetric_difference_update method: ", S1)
+
+
+#---------------Union--------------------------set containing all the unique elements from both original sets or 
+# combine all elements from both sets and remove any duplicates
+
+# Union1 = {"Hello India", (100, 500), ("India", "China", "Japan")}
+# Union2 = {"Anjali_AI", (100, 500), ("India", "China", "Japan"), "Data Science", 500 , "Anjali is the best"}
+
+
+# Union_Result = Union1.union(Union2)
+# print("All single values from both sets and duplicate value will be only 1 time in the output:", Union_Result)
+
+
+# ----------------Update---------------------------
+# S1 = {1, 2, 3}
+
+# print("Original values:", S1)
+
+# S1.add("Anjali is the best")
+
+# print("After adding the values:", S1)
+
+# S2 = {100, 200, 300}
+
+# S1.update(S2)
+# print("After using update built-in method", S1)
+
+
+#========================= COMPLETED ALL BUILT-IN METHODS ====================================================================================================================
+#==========================================================================================================================================
+

@@ -39,22 +39,29 @@ for i in range(0, List_Tuple_Numbers):
 # print(Sum)
 
 
-#-------MULTIIPLICATION-------------
-Multi = 1
+#-------MULTIIPLICATION-------------DONE
+# Multi = 1
+# Tup = tuple(List_Tuple)
+# for i in Tup:
+#     Multi = Multi*i
+
+# print(type(Tup))
+# print(Tup)
+# print(Multi)
+
+#--------Highest value----------------
+Highest = 0
+Second_highest = 0
 Tup = tuple(List_Tuple)
 for i in Tup:
-    Multi = Multi*i
-
-print(type(Tup))
-print(Tup)
-print(Multi)
-
-    
+    for j in (i+1, Tup):
+        if i > j and i > j+1:
+            Highest = i
+        elif i > j and  
 
 
 #==============================================================================================================================================
-#--------Sum -----------------------Done
-#---Multiplication--------------------- Done
+
 # # #-----Highest and second highest value --------Done
 #--------Lowest and second lowest-----------------------Done
 #-----------Sum of even and odd, how many even and odd numbers----------Done

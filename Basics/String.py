@@ -70,24 +70,24 @@
 
 #===============================================================================================================================================================================
 #3 Write a program to check if two strings are Anagram
-Anagram1 = input('Enter the first string:- ')
-Anagram2 = input("Enter the second string:- ")
+# Anagram1 = input('Enter the first string:- ')
+# Anagram2 = input("Enter the second string:- ")
 
-Ana1 = []
-Ana2 = []
+# Ana1 = []
+# Ana2 = []
 
-for i in Anagram1:
-    for j in Anagram2:
-        if i in Anagram2 and j in Anagram1:
-            Ana1.append(i) and Ana2.append(j)
-        else:
-            continue
+# for i in Anagram1:
+#     for j in Anagram2:
+#         if i in Anagram2 and j in Anagram1:
+#             Ana1.append(i) and Ana2.append(j)
+#         else:
+#             continue
         
-if i in Ana2 and j in Ana1:
-    if len(Ana1) == len(Ana2):
-        print("Yes, the entered both string are Anagram i.e.", Anagram1 , "and", Anagram2)
-else:
-    print("No, the entered both string are not Anagram i.e.", Anagram1, "and", Anagram2)
+# if i in Ana2 and j in Ana1:
+#     if len(Ana1) == len(Ana2):
+#         print("Yes, the entered both string are Anagram i.e.", Anagram1 , "and", Anagram2)
+# else:
+#     print("No, the entered both string are not Anagram i.e.", Anagram1, "and", Anagram2)
             
             
             
