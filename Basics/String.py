@@ -69,36 +69,90 @@
     
 
 #===============================================================================================================================================================================
-#3 Write a program to check if two strings are Anagram
+#3 Write a program to check if two strings are Anagram  - (Check : Heart and earth) - Sort method (by default it is in ascending order)
 # Anagram1 = input('Enter the first string:- ')
 # Anagram2 = input("Enter the second string:- ")
 
-# Ana1 = []
-# Ana2 = []
-
-# for i in Anagram1:
-#     for j in Anagram2:
-#         if i in Anagram2 and j in Anagram1:
-#             Ana1.append(i) and Ana2.append(j)
-#         else:
-#             continue
-        
-# if i in Ana2 and j in Ana1:
-#     if len(Ana1) == len(Ana2):
-#         print("Yes, the entered both string are Anagram i.e.", Anagram1 , "and", Anagram2)
+# if len(Anagram1) != len(Anagram2):
+#     print("No, it is not Anagram i.e. both are", Anagram1, "and", Anagram2)
 # else:
-#     print("No, the entered both string are not Anagram i.e.", Anagram1, "and", Anagram2)
-            
-            
-            
-        
+#     if sorted(Anagram1) == sorted(Anagram2):
+#         print("Yes, it is anagram i.e. both are", Anagram1 , "and",  Anagram2)
+#     else:
+#         print("No, it is not anagram i.e. both are", Anagram1 , "and",  Anagram2)
+               
 
 
-#===========================================================================================================================================
+#======================== DONE ===================================================================================================================
 #4 Write a program to check a string is palindrome or not
+# Palindrome = input("Enter the value to check if it is palindrome or not: ")
+# Pal = []
+# for i in Palindrome:
+#     Pal.append(i)
+
+# i = 0
+# j = -1
+
+# for k in range(len(Palindrome)):
+#     if Palindrome[i] == Pal[j]:
+#         print("Yes, it is palindrome i.e.:", Palindrome)
+#         i += 1
+#         j -= 1
+#     else:
+#         print("No, it is not palindrome i.e.:", Pal)
+#         break
+    
+
+#=============================== DONE ====================================================================================================================
 #5 Write a program to check given character is vowel or consonant
+# Vowel = "AEIOUaeiou"
+
+# Vowel_or_Consonant = input("Enter the character to check it is vowel or consonant: ")
+
+# for i in Vowel_or_Consonant:
+#     if i in Vowel:
+#         print("Yes, the entered character is vowel i.e ", Vowel_or_Consonant)
+#     else:
+#         print("No, the entered character is not vowel i.e. ", Vowel_or_Consonant)
+
+
+
+# char = input('Enter the character: ').lower()
+
+# if len(char) == 1 and char.isalpha():
+#     if char in "aeiou":
+#         print('Yes, the entered character is vowel i.e.', char)
+#     else:
+#         print("No, the entered character is not vowel i.e.", char)
+# else:
+#     print("Please enter the single alphabet character")
+    
+    
+#================= DONE ============================================================================================================================
 #6 Write a program to check given character is digit or not
+# Digit_or_not = input("Enter the value: ")
+
+# if len(Digit_or_not) >=0 and Digit_or_not.isdigit():
+#     print("Yes, the entered character is digit i.e.:", Digit_or_not)
+# else:
+#     print("No, the entered character is not digit becuase you have extered:", Digit_or_not )
+
+
+#================================================================================================================================================
 #7 Write a program to replace the string space with a given character
+# Character = input('Enter the character which you wants to place in a string space:')
+# String = input('Enter the sentence: ')
+
+# for i in String:
+#     if i == " ":
+#         i.replace(" ", Character)
+
+#     else:
+#         pass
+
+
+
+#========================================================================================================================================
 #8 Write a program to convert lowercase character to uppercase of string
 #9 Write a program to convert lowercase vowels to uppercase in string
 #10 Write a program to delete vowels in a given string
