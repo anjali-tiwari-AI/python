@@ -71,21 +71,34 @@
 # greeting(age=27,name="Anjali")
 
 
-#---already entered name-----
+#------------------------------------------ ALREADY ENTERED NAME ------------------------------------------------------------------------------
 # def hello(name="Guest"):
 #     print("Hello",name)
 
 # hello()
 
 
-#---MULTIPLE THINGS-----
-# def addition(*args):
-#     print(sum(args))
+#------------------------------------------ MULTIPLE ARGUMENTS -------------------------------------------------------------------------------------
+# def addition(*nums):
+#     print(sum(nums))
 
 # addition(12,13,14,15)
 
+#====================================== BY DEFAULT KEY ======================================================================================
+# Create a function that accepts a name and prints a greeting message. 
+# def Greeting(Name = "Sir/Madam"):
+#     Name = input("Enter your name:")
+#     print(f"Hello {Name}, welcome to this Taj hotel")
+# Greeting()
 
-#--multiple things with keys
+
+# def User_Greeting(User_name = 'User'):
+#     # Name = input("Enter your name: ")
+#     print(f"Hello {User_name}, Welcome to the facebook")
+
+# User_Greeting()
+
+#----------------------------------------multiple things with keys--------------------------------------------------------
 # def stu_info(**kwargs):
 #     for key,value in kwargs.items():
 #         print(f"{key} : {value}")
@@ -127,18 +140,172 @@
 # list_ops(a)
 
 
-#============PRACTICE QUESTIONS====================================================================================
+#=================================================== HIGH ORDER FUNCTION =========================================================================
+# 1) Map                 2) Filter                   3) Reduce          4) Lambda function                      (Built-in)
+
+#---------Lambda function-----------------
+# Syntex - Lambda input: Expression   
+# Properties =  lambda has no return value
+#               One line of code only
+#               Not used for code reusability  - Can use only 1 time only
+#               No name
+
+
+# Why need to use: Along with higher order functions
+# X = lambda x : x**2
+# print(X(9))
+
+
+# A = lambda a,b : (a + b)
+# print(A(4, 5))
+
+
+# B = lambda x : x[0] == "A"
+# print(B("Apple"))   # True
+# print(B("Banana"))  # False
+
+
+# OE = lambda x : "Even" if x%2 == 0 else "Odd"
+# print(OE(45)) 
+# print(OE(20))
+
+
+# OE = lambda x: "Not Even" if x%2 != 0 else "Not odd"
+# print(OE(14))
+
+
+#----------------Higher order function-------------------------------
+# def return_sum(func, L):
+#     Result = 0
+#     for i in L:
+#         if func(i):
+#             Result = Result + i
+#     return Result 
+
+# L = [12, 75, 36, 35, 45, 95, 64, 82, 23, 71, 11, 9 , ]
+
+# X = lambda x : x%2 == 0
+# Y = lambda y : y%2 != 0
+# Z = lambda z : z%3 == 0
+
+# print(return_sum(X, L))
+# print(return_sum(Y, L))
+# print(return_sum(Z, L))
+
+
+#===================================== MAP ================================================================================================
+# L = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# X = map(lambda x : x*2 , L)
+# print(X)
+# X = list(map(lambda x : x*2 , L))
+# print(X , "Double value")
+
+
+# Y = list(map(lambda x : x % 2 == 0, L))
+# print(L, "Original value")
+# print(Y)
+
+
+
+# Student = [
+#     {
+#         "Name" : "Jacob Martin", 
+#         "Father Name" : "Ros Martin", 
+#         "Address" : "123 Hill street" ,
+#     } , {
+#         "Name" : "Angela Stevens", 
+#         "Father Name" : "Robert Stevens",
+#         "Address" : "3 Upper Street London", 
+#     } , {
+#         "Name" : "Ricky Smart", 
+#         "Father Name" : "William Smart", 
+#         "Address" : "Unknown"
+#     }
+# ]
+
+# Output = map(lambda Student : Student ["Name"], Student)
+# print(Output)
+
+# Output = list(map(lambda Student : Student ["Name"], Student))
+# print("Name =", Output)
+
+
+#============================================ FILTER ==========================================================================================
+# List = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Value = list(filter(lambda x : x>4 , List))
+# print(Value)
+
+
+# Fruits = ["Apple", "Orange", "Mango", 'Guava', "Graps", "Pinapple"]
+# E = list(filter(lambda Fru : "e" in Fru , Fruits))
+# print(E)
+
+# A = list(filter(lambda Fru : "a" in Fru , Fruits))
+# print(A)
+
+
+#=============================================== REDUCE ===========================================================================
+# import functools
+
+# L = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Red = functools.reduce(lambda x , y : x + y , L)
+# print(Red)
+
+
+#-----------Largest value--------------
+# L1 = [12, 34, 56, 85, 72, 99, 15, 1, 46]
+# Highest = functools.reduce(lambda x , y : x if x > y else y, L1)
+# print("Highest value", Highest)
+
+
+#------------------Lowest value---------------
+# L2 = [128, 63, 49, 4, 520, 258, 16, 3, 78, 64, 59]
+# Lowest = functools.reduce(lambda x , y : x if x < y else y, L2)
+# print(Lowest)
+
+
+#======================================================== LIST COMPREHENSION ==================================================================
+# L = [1, 2, 3, 4, 5, 6, 7]
+# L1 = [item*2 for item in L]
+# print(L1)
+
+# L2 = [i**2 for i in range(10)]
+# print(L2)
+
+
+# L3 = [i**2 for i in range(10) if i%2 != 0]
+# print(L3)
+
+# Fruits = ["Apple", "Orange", "Mango", 'Guava', "Graps", "Pinapple"]
+# Frui = [fru for fru in Fruits if fru[0] == "O"]
+# print(Frui)
+#======================================================== DICTIONARY COMPREHENSION =========================================================
+# D = {'Name' : "Nitish", 'Gender': "Male", "Age": 30, "No": 99}
+# print(D.items())
+
+# D1 = {key : value for key, value in D.items() if len(key)>3}
+# print(D1)
+
+
+# L = [1, 2, 3, 4, 5, 6, 7]
+# L10 = {item:item**2 for item in L}
+# print(L10)
+
+# L11 = {item:item**2 for item in L if item%2 == 0}
+# print(L11)
+
+#=================================================== PRACTICE QUESTIONS ====================================================================================
 #  Basic Level (50 Questions) 
 # Focus: function definition, calling, parameters, return values, scope basics. 
 
 
-#========================DONE=======================================================================================
+#============================================ DONE =======================================================================================
 # 1. Write a function that prints "Hello, World!". 
 # def funct():
 #     print("Hello, World!")
 # funct()
 
-#======================DONE======================================================================================
+#=========================================== DONE ======================================================================================
 # 2. Create a function that takes a number and prints whether it is even or odd. 
 # def even_odd(Num):
 #     Number = int(input("Enter the nummber:"))
@@ -149,7 +316,7 @@
 # even_odd(50)
 
 
-#==================DONE============================================================================================
+#========================================== DONE ============================================================================================
 # 3. Write a function that adds two numbers and returns the result. 
 # def add_2_number(a, b):
 #     Add = a + b
@@ -157,7 +324,7 @@
 # print(add_2_number(15, 16))    
 
 
-#=====================DONE========================================================================================
+#=========================================== DONE ========================================================================================
 # 4. Define a function that returns the square of a number. 
 # def Square_of_number(A):
 #     Square = A*A
@@ -165,7 +332,7 @@
 # Square_of_number(5)
     
 
-#================DONE===========================================================================================
+#============================================ DONE ====================================================================================================================
 # 5. Create a function to find the maximum of two numbers. 
 # def maximum(a ,b):
 #     if a>b:
@@ -175,7 +342,7 @@
 # maximum(152, 15)
 
 
-#===============DONE=================================================================================================
+#============================================= DONE =================================================================================================
 # 6. Write a function that converts Celsius to Fahrenheit. 
 # def Celsius_to_Fahrenheit():
 #     Celsius = int(input("Enter the Celsius to converts Fahrenheit:"))
@@ -183,7 +350,7 @@
 #     print(Fahrenheit)
 # Celsius_to_Fahrenheit()
 
-#===============DONE===================================================================================================
+#================================== DONE ===================================================================================================
 # 7. Make a function that returns the factorial of a number (using loop). 
 # def Factorial():
 #     Fact = int(input("Enter the number: "))
@@ -194,7 +361,7 @@
 # Factorial()
 
 
-#==================DONE===========================================================================================
+#========================================== DONE ===========================================================================================
 # 8. Write a function to calculate the area of a rectangle. 
 # def Area_of_Rectangle():
 #     Length =  int(input("Enter the Length of the rectangle: "))
@@ -204,12 +371,19 @@
 # print(Area_of_Rectangle())
 
 
-#====================DONE=========================================================================================
+#====================DONE================== BY DEFAULT KEY ======================================================================================
 # 9. Create a function that accepts a name and prints a greeting message. 
 # def Greeting(Name = "Sir/Madam"):
 #     Name = input("Enter your name:")
 #     print(f"Hello {Name}, welcome to this Taj hotel")
 # Greeting()
+
+
+# def User_Greeting(User_name = 'User'):
+#     # Name = input("Enter your name: ")
+#     print(f"Hello {User_name}, Welcome to the facebook")
+
+# User_Greeting()
 
 # #-----------------------------------------------------
 # def Greeting(Name = "Sir/Madam"):
@@ -217,7 +391,7 @@
 # Greeting()
 
 
-#====================DONE=========================================================================================
+#================================================ DONE ==============================================================================================
 # 10. Write a function to check if a number is positive, negative, or zero.
 # def Positive_Negative_Zero():
 #     Number = int(input("Enter the number: "))
@@ -230,7 +404,7 @@
 # Positive_Negative_Zero()
 
 
-#===============DONE============================================================================================== 
+#============================================= DONE ============================================================================================== 
 # 11. Write a function that returns the length of a string. 
 # def length_string():
 #     String = input("Enter the string here: ")
@@ -244,60 +418,72 @@
 #     for char in String:
 #         count += 1
 #     print("The length of the string is:", count)
- 
 
 
-#=============NEED TO CHECK========================================================================================
+#================================================ DONE ========================================================================================
 # 12. Create a function that reverses a string. 
 # def Reverse_string():
 #     Reverse = input('Enter the string to reverse it: ')
-#     Reversed = []
-#     for char in Reverse(-1, 0, -1):
-#         print(char)
+#     for char in Reverse[-1: :-1]:
+#         print(char , end = " ")
+
 # Reverse_string()
 
 
 
-#====================NEED TO CHECK==============================================================================
+#=============================================== DONE ========================================================================================
 # 13. Define a function to check if a number is prime. 
 # def prime():                
 #     count = 0
 #     Number = int(input("Enter the numbers: "))
-#     for i in Number():
-#         if Number%i == 0:
+#     i = 1
+#     for i in range(1, Number+1):
+#         if Number % i == 0:
 #             count += 1
-#         else:
-#             pass 
-#         for j in Number:
-#             if count>2:
-#                 pass
-#             else:
-#                 print("The entered number is prime: ", Number)       
+    
+#     if count == 2:
+#         print("It is a Prime number i.e.", Number)
+#     else:
+#         print("It is not a prime number i.e.", Number)
+            
 # prime()
 
 
-#======================NEED TO CHECK============================================================================
+#================================================ DONE ==================================================================================
 # 14. Write a function to calculate the sum of first n natural numbers.
-# def sum_of_number(*args):
+# def sum_of_first_n_natural_numbers():
+#     First_N_number_count = int(input("Enter the number of times you wants to enter number: "))
+#     Value = []
+#     for i in range(First_N_number_count):
+#         All_numbers = int(input("Enter all the numbers: "))
+#         Value.append(All_numbers)
+        
 #     Sum = 0
-#     for i in args:
-#         Sum = Sum + i
-#         return Sum
-# print(sum_of_number(1, 2, 3, 4, 5, 6, 7, 8, 9))
+#     for i in Value:
+#         Sum = Sum +  i
+#     print("Sum of first n natural number is", Sum)
 
-
-#==================NEED TO CHECK============================================================================== 
+# sum_of_first_n_natural_numbers()  
+        
+        
+        
+#==================================================== DONE ================================================================================ 
 # 15. Write a function that multiplies all numbers in a list. 
 # def multiplies_all_numbers():
-#     List = int(input("Enter the numbers: "))
-#     List_number = int(input(range(List("Enter the list numbers: "))))
+#     List = []
+#     Total_value_List = int(input('Enter the total number of values you wants to enter in list: '))
+#     for i in range(Total_value_List):
+#         Value = int(input("Enter the values of the list: "))
+#         List.append(Value)  
+    
 #     Multi = 1
-#     for i in List_number():
-#         Multi = Multi*i
-# multiplies_all_numbers()       
+#     for i in List:
+#         Multi = Multi * i
+#     print(Multi)
+# multiplies_all_numbers()
 
 
-#==================DONE===============================================================================================
+#========================================== DONE ===============================================================================================
 # 16. Make a function that prints the first 10 Fibonacci numbers. 
 # def Fibonacci_numbers(i):
 #     Fibonacci_10_No = int(input("Enter the number:"))
@@ -312,35 +498,44 @@
 #         print(f"The {i} fibonacci number is : {Third}")
 
 
-#====================NEED TO CHECK============================================================================================
+#==================================== NEED TO CHECK ============================================================================================
 # 17. Write a function to check if a string is a palindrome. 
-# def string_is_palindrome(*args):
-#     Palindrome = str(input("Enter the string: "))
-#     Pal = []
-#     for (i) in Palindrome():
+# def string_is_palindrome():
+#     Palindrome = input("Enter the string: ")
+#     Palindrome = Palindrome.lower()
+#     Palindrome = Palindrome.replace(" ", "")
+
+#     Palin = []
+#     for i in Palindrome[::-1]:
+#         Pal = i
 #         Pal.append(i)
-#         print(i, end = "")
-#     for j in Pal:
-#         k = 0
-#         if Pal[j] == Palindrome[-k]:
-#             print("entered string is palindrome:" , Pal)
-#         else:
-#             print("Entered string is not palindrome:", Pal)
-#         k -= 1
-# string_is_palindrome()             
+#         print(Pal)
+
+#     if Palindrome == Palin:
+#         print("Yes, the entered string is palindrome becasue the Original and After reverse string is", Palindrome , Palin)
+#     else:
+#         print("No, the entered string is not palindrome becasue the Original and After reverse string is", Palindrome, Palin)
+    
+# string_is_palindrome()
 
 
-#===============NEED TO CHECK=======================================================================================================
+#====================== NEED TO CHECK =======================================================================================================
 # 18. Create a function to find the minimum number in a list. 
 # def Minimum_no(*args):
 #     List = int(input("Enter the numbers:"))
 #     Listing = []
-#     for j in List:
-        
-#         print(List)
+#     for j in range(List):
+#         List_Values = int(input('Enter the values of the list: '))
+#         Listing.append(List_Values)
+#     Minimum = Listing[0]
+#     for i in range(List):
+#         if Listing[i] < Minimum:
+#             Minimum = Listing[i]
+#     print(Minimum) 
+               
 # Minimum_no()
 
-#===================DONE==================================================================================================
+#===================================== DONE ==================================================================================================
 # 19. Write a function that returns the average of numbers in a list. 
 # def average_of_number():
 #     A = []
@@ -356,7 +551,7 @@
 #         print(f"The average of the entered numbers is {Average}")
        
 
-#===================DONE================================================================================================
+#====================================== DONE ================================================================================================
 # 20. Define a function that prints a multiplication table of a given number. 
 # def multiplication_table():
     
@@ -366,30 +561,30 @@
 #         Number = Num * i
 #         print(f"{Num} x {i} = {Number}")
         
+# multiplication_table()
 
-
-#==================== DONE ==============================================================================================
+#======================================== DONE ==============================================================================================
 # 21. Write a function that returns the largest of three numbers. 
-# def largest_of_3_numbers():
-#     Largest = int(input("Number of times you wants to enter number: "))
-#     Lrg = []
-#     j = 0
-#     for i in range(Largest):
-#         Large = int(input("Enter numbers: "))
-#         Lrg.append(Large)
+def largest_of_3_numbers():
+    Largest = int(input("Number of times you wants to enter number: "))
+    Lrg = []
+    j = 0
+    for i in range(Largest):
+        Large = int(input("Enter numbers: "))
+        Lrg.append(Large)
         
-#     if Lrg[j] > Lrg[j + 1] and Lrg[j] > Lrg[j + 2]:
-#         print("The largest number is: ", Lrg[j])
+    if Lrg[j] > Lrg[j + 1] and Lrg[j] > Lrg[j + 2]:
+        print("The largest number is: ", Lrg[j])
         
-#     elif Lrg[j] < Lrg[j + 1] and Lrg[j + 1] > Lrg[j + 2]:
-#         print("The largest number is :", Lrg[j + 1])
+    elif Lrg[j] < Lrg[j + 1] and Lrg[j + 1] > Lrg[j + 2]:
+        print("The largest number is :", Lrg[j + 1])
         
-#     else:
-#         print("The largest number is :", Lrg[j + 2])
+    else:
+        print("The largest number is :", Lrg[j + 2])
                  
+largest_of_3_numbers()
 
-
-#====================DONE=================================================================================================
+#======================================= DONE =================================================================================================
 # 22. Create a function to count the number of vowels in a string. 
 # def Number_of_vowels():
 #     Vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
@@ -404,28 +599,29 @@
 # Number_of_vowels()
 
 
-#====================== NEED TO CHECK ============================================================================================
+#====================== DONE ============================================================================================
 # 23. Write a function that checks if a number is Armstrong or not. 
 # def Number_is_armstrong_or_not():
 #     Number = int(input("Enter the number: "))
-#     Num = Number
+#     Length = str(Number)
+#     Power = len(Length)
+#     Prod = 0
 #     Sum = 0
-#     count = int(input("Enter the number is digits in the entered number: "))
-
-#     for i in Num():
-#         Sum_Add = i**count
-#         Sum = Sum_Add + Sum
-#         print(Sum)
-        
+#     Value = Number
+#     for i in Length:
+#         Single_num = Value % 10
+#         Prod = Single_num ** Power
+#         Sum = Sum + Prod
+#         Value = Value // 10
+           
 #     if Sum == Number:
-#         print("Entered number is Armstrong: ", Number)
+#         print(f"Entered number {Number} is Armstrong because their sum is {Sum}")
 #     else:
-#         print("Entered number is not Armstrong: ", Number)
-
-
-# Number_is_armstrong_or_not()    
+#         print(f"Entered number {Number} is not Armstrong becuase their sum is {Sum}")
         
-
+# Number_is_armstrong_or_not()
+ 
+ 
 #===================== DONE ===============================================================================================
 # 24. Define a function that takes a list and returns a new list with unique elements. 
 # def Takes_list():
@@ -447,7 +643,6 @@
 #     Rate = float(input("Enter the rate of interest: "))
 #     SI = (Principle*Rate*Time)/100
 #     print(SI)
-
 
 
 #=================================================================================================================
