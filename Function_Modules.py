@@ -1,4 +1,4 @@
-import Function
+import Basics.Function as Function
 
 #================================================
 # Function.Fibonacci_numbers(10)
@@ -62,13 +62,13 @@ import Function
 # from Function import counts_lowercase_letters_in_string
 
 #======================================================
-from Function import default_parameters_for_greeting_message
+# from Basics.Function import default_parameters_for_greeting_message
 
 
-import math as m 
+# import math as m 
 
-print(m.sin(30))
-ceil
-Floor
-tan
-cos
+# print(m.sin(30))
+# ceil
+# Floor
+# tan
+# cos

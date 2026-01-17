@@ -565,24 +565,24 @@
 
 #======================================== DONE ==============================================================================================
 # 21. Write a function that returns the largest of three numbers. 
-def largest_of_3_numbers():
-    Largest = int(input("Number of times you wants to enter number: "))
-    Lrg = []
-    j = 0
-    for i in range(Largest):
-        Large = int(input("Enter numbers: "))
-        Lrg.append(Large)
+# def largest_of_3_numbers():
+#     Largest = int(input("Number of times you wants to enter number: "))
+#     Lrg = []
+#     j = 0
+#     for i in range(Largest):
+#         Large = int(input("Enter numbers: "))
+#         Lrg.append(Large)
         
-    if Lrg[j] > Lrg[j + 1] and Lrg[j] > Lrg[j + 2]:
-        print("The largest number is: ", Lrg[j])
+#     if Lrg[j] > Lrg[j + 1] and Lrg[j] > Lrg[j + 2]:
+#         print("The largest number is: ", Lrg[j])
         
-    elif Lrg[j] < Lrg[j + 1] and Lrg[j + 1] > Lrg[j + 2]:
-        print("The largest number is :", Lrg[j + 1])
+#     elif Lrg[j] < Lrg[j + 1] and Lrg[j + 1] > Lrg[j + 2]:
+#         print("The largest number is :", Lrg[j + 1])
         
-    else:
-        print("The largest number is :", Lrg[j + 2])
+#     else:
+#         print("The largest number is :", Lrg[j + 2])
                  
-largest_of_3_numbers()
+# largest_of_3_numbers()
 
 #======================================= DONE =================================================================================================
 # 22. Create a function to count the number of vowels in a string. 
